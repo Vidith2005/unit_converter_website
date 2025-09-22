@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <h1>My Unit Converter</h1>
+  </header>
+
+  <!-- ===== Main Content ===== -->
+  <main class="main-content">
+
+    <!-- Top Ad -->
+    <section class="ad ad-top">
+      <p>Ad Space — 728×90</p>
+    </section>
+
+    <div class="container">
+      <p class="tagline">Easily convert length, weight, and temperature values.</p>
+
+      <div class="converter">
+        <label for="category">Choose Category:</label>
+        <select id="category">
+          <option value="length">Length</option>
+          <option value="weight">Weight</option>
+          <option value="temperature">Temperature</option>
+        </select>
+
+        <div class="input-group">
+          <input type="number" id="inputValue" placeholder="Enter value">
+          <select id="fromUnit"></select>
+        </div>
+
+        <div class="input-group">
+          <input type="text" id="outputValue" placeholder="Result" readonly>
+          <select id="toUnit"></select>
+        </div>
+
+        <button id="convertBtn">Convert</button>
+      </div>
+    </div>
+
+    <!-- Bottom Ad -->
+    <section class="ad ad-bottom">
+      <p>Ad Space — 300×250</p>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>Made with ❤️ by <strong>Your Name</strong> | <span id="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
